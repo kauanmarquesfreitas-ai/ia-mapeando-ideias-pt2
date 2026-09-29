@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overdose de Notificações - Gestão de Rotinas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-content {
+            background: rgba(22, 27, 34, 0.7);
+            border: 1px solid rgba(48, 54, 61, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #818cf8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            transition: transform 0.2s;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        .svg-container {
+            width: 100%;
+            max-width: 450px;
+            margin: 30px auto;
+            display: block;
+        }
+        .section-block {
+            margin-bottom: 35px;
+        }
+        .section-block h2 {
+            color: #f0f6fc;
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.8);
+            padding-bottom: 8px;
+        }
+        .section-block p {
+            color: #c9d1d9;
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .grid-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .box-item {
+            background: rgba(13, 17, 23, 0.8);
+            border: 1px solid #30363d;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .box-item h3 {
+            color: #38bdf8;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-3d">
+        <div class="grid-3d"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Voltar ao Painel Principal</a>
+        
+        <header class="main-header" style="text-align: left; margin-bottom: 20px;">
+            <span class="card-tag tag-danger">Foco & Atenção</span>
+            <h1 style="margin-top: 10px;">Aprofundamento: <span class="highlight">Overdose de Notificações</span></h1>
+            <p class="subtitle" style="margin: 0;">Proteja seu espaço mental contra a fragmentação da atenção e chamados profissionais assíncronos.</p>
+        </header>
+
+        <!-- Ilustração SVG Embutida -->
+        <svg class="svg-container" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="500" height="200" rx="12" fill="#161B22" stroke="#30363D"/>
+            <circle cx="120" cy="100" r="45" fill="rgba(239, 68, 68, 0.1)" stroke="#F87171" stroke-width="2"/>
+            <path d="M110 90 L130 110 M130 90 L110 110" stroke="#F87171" stroke-width="3"/>
+            <circle cx="380" cy="100" r="45" fill="rgba(56, 189, 248, 0.1)" stroke="#38BDF8" stroke-width="2"/>
+            <path d="M365 100 L375 110 L395 90" stroke="#38BDF8" stroke-width="3"/>
+            <text x="75" y="165" fill="#F87171" font-size="12" font-family="sans-serif">Atenção Fragmentada</text>
+            <text x="340" y="165" fill="#38BDF8" font-size="12" font-family="sans-serif">Hiperfoco Isolado</text>
+        </svg>
+
+        <main class="page-content">
+            <section class="section-block">
+                <h2>O Custo Invisível da Troca de Contexto</h2>
+                <p>Cada vez que seu celular toca ou uma notificação do Slack/WhatsApp aparece na tela, ocorre o efeito de "Resíduo de Atenção". Mesmo que você olhe a mensagem por apenas 3 segundos, seu cérebro leva até 23 minutos para retornar ao nível máximo de profundidade que tinha antes da interrupção.</p>
+            </section>
+
+            <section class="section-block">
+                <h2>Estratégia de Blindagem digital</h2>
+                <div class="grid-boxes">
+                    <div class="box-item">
+                        <h3>1. Distância Física</h3>
+                        <p>Coloque o smartphone em outro cômodo durante os blocos de estudo. Se o celular estiver no seu campo de visão, seu cérebro gasta energia para ignorá-lo.</p>
+                    </div>
+                    <div class="box-item">
+                        <h3>2. Telas em Preto e Branco</h3>
+                        <p>Ative o modo escala de cinza no smartphone. Sem as cores vibrantes das notificações, o apelo dopaminérgico das redes sociais cai drasticamente.</p>
+                    </div>
+                    <div class="box-item">
+                        <h3>3. Bloco Mudo Profissional</h3>
+                        <p>Crie uma resposta automática ou deixe avisado ao seu time que após determinado horário suas respostas serão lidas apenas no dia seguinte.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

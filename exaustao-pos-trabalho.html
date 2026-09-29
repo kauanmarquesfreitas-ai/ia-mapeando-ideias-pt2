@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exaustão Pós-Trabalho - Gestão de Rotinas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-content {
+            background: rgba(22, 27, 34, 0.7);
+            border: 1px solid rgba(48, 54, 61, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #818cf8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            transition: transform 0.2s;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        .svg-container {
+            width: 100%;
+            max-width: 450px;
+            margin: 30px auto;
+            display: block;
+        }
+        .section-block {
+            margin-bottom: 35px;
+        }
+        .section-block h2 {
+            color: #f0f6fc;
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.8);
+            padding-bottom: 8px;
+        }
+        .section-block p {
+            color: #c9d1d9;
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+            padding: 0;
+        }
+        .step-list li {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 45px;
+            margin-bottom: 20px;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background: rgba(79, 70, 229, 0.2);
+            border: 1px solid #818cf8;
+            color: #818cf8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-3d">
+        <div class="grid-3d"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Voltar ao Painel Principal</a>
+        
+        <header class="main-header" style="text-align: left; margin-bottom: 20px;">
+            <span class="card-tag tag-warning">Cansaço Mental</span>
+            <h1 style="margin-top: 10px;">Aprofundamento: <span class="highlight">Exaustão Pós-Trabalho</span></h1>
+            <p class="subtitle" style="margin: 0;">Entenda a ciência por trás da fadiga cognitiva e como estruturar rituais de recuperação para estudar com eficiência.</p>
+        </header>
+
+        <!-- Ilustração SVG Embutida -->
+        <svg class="svg-container" viewBox="0 0 500 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="500" height="250" rx="12" fill="#161B22" stroke="#30363D"/>
+            <path d="M100 180 L180 140 L260 160 L340 90 L400 110" stroke="#F87171" stroke-width="4" stroke-dasharray="6 6"/>
+            <circle cx="400" cy="110" r="8" fill="#F87171"/>
+            <path d="M100 180 L180 120 L260 90 L340 60 L400 40" stroke="#38BDF8" stroke-width="4"/>
+            <circle cx="400" cy="40" r="8" fill="#38BDF8"/>
+            <text x="100" y="210" fill="#8B949E" font-size="12" font-family="sans-serif">Início do Dia</text>
+            <text x="360" y="210" fill="#8B949E" font-size="12" font-family="sans-serif">Fim da Noite</text>
+            <text x="280" y="125" fill="#F87171" font-size="12" font-family="sans-serif">Energia Sem Pausa</text>
+            <text x="260" y="50" fill="#38BDF8" font-size="12" font-family="sans-serif">Energia com Transição Ativa</text>
+        </svg>
+
+        <main class="page-content">
+            <section class="section-block">
+                <h2>O Diagnóstico Neurocientífico</h2>
+                <p>Após uma jornada contínua de trabalho, seu cérebro consome boa parte das reservas de glicose no córtex pré-frontal — a região responsável pela tomada de decisões, lógica e foco. Quando você tenta migrar imediatamente do trabalho para os estudos, o cérebro entra no modo de preservação de energia, resultando em leitura passiva e incapacidade de retenção.</p>
+            </section>
+
+            <section class="section-block">
+                <h2>Plano de Ação de 4 Etapas</h2>
+                <ol class="step-list">
+                    <li><strong>Desconexão Sensorial de 20 Minutos:</strong> Logo ao encerrar o trabalho, afaste-se totalmente de telas. Tome um banho frio ou morno e troque de roupa. Essa mudança física sinaliza ao cérebro o encerramento do ciclo profissional.</li>
+                    <li><strong>Alimentação Leve de Baixo Índice Glicêmico:</strong> Evite refeições pesadas cheias de carboidratos simples antes de estudar, pois o pico de insulina gerará sonolência. Prefira proteicos leves, oleaginosas ou água gelada.</li>
+                    <li><strong>Micro-sessões de Aquecimento (Regra dos 5 Minutos):</strong> Diga a si mesmo que estudará por apenas 5 minutos. Superar o atrito da inércia inicial reduz em até 80% a sensação de cansaço ilusório.</li>
+                    <li><strong>Estudo Invertido (Se Possível):</strong> Mova 45 minutos do seu bloco de estudos para antes do trabalho. Acordar um pouco mais cedo garante que seu melhor foco seja investido nos seus projetos pessoais.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

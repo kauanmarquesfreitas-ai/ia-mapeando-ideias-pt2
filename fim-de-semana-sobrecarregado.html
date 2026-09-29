@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fim de Semana Sobrecarregado - Gestão de Rotinas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-content {
+            background: rgba(22, 27, 34, 0.7);
+            border: 1px solid rgba(48, 54, 61, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #818cf8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            transition: transform 0.2s;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        .svg-container {
+            width: 100%;
+            max-width: 450px;
+            margin: 30px auto;
+            display: block;
+        }
+        .section-block {
+            margin-bottom: 35px;
+        }
+        .section-block h2 {
+            color: #f0f6fc;
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.8);
+            padding-bottom: 8px;
+        }
+        .section-block p {
+            color: #c9d1d9;
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-3d">
+        <div class="grid-3d"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Voltar ao Painel Principal</a>
+        
+        <header class="main-header" style="text-align: left; margin-bottom: 20px;">
+            <span class="card-tag tag-warning">Rotina</span>
+            <h1 style="margin-top: 10px;">Aprofundamento: <span class="highlight">Fim de Semana Sobrecarregado</span></h1>
+            <p class="subtitle" style="margin: 0;">Como evitar o acúmulo de matérias e garantir a recuperação necessária para a semana útil.</p>
+        </header>
+
+        <!-- Ilustração SVG Embutida -->
+        <svg class="svg-container" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="500" height="200" rx="12" fill="#161B22" stroke="#30363D"/>
+            <rect x="60" y="50" width="220" height="100" rx="8" fill="#21262D" stroke="#FBBF24"/>
+            <text x="80" y="85" fill="#FBBF24" font-size="14" font-weight="bold">Sábado: Foco Único</text>
+            <text x="80" y="115" fill="#C9D1D9" font-size="12">Manhã: Apenas 3h de estudo profundo</text>
+            
+            <rect x="300" y="50" width="140" height="100" rx="8" fill="rgba(56, 189, 248, 0.1)" stroke="#38BDF8"/>
+            <text x="320" y="95" fill="#38BDF8" font-size="14" font-weight="bold">Domingo</text>
+            <text x="320" y="120" fill="#38BDF8" font-size="12">Descanso total</text>
+        </svg>
+
+        <main class="page-content">
+            <section class="section-block">
+                <h2>O Mito da Maratona de Estudos</h2>
+                <p>Tentar estudar 8 ou 10 horas seguidas no sábado e no domingo para compensar a semana gera um rendimento ilusório. A partir da quarta hora, a retenção de conteúdo cai drasticamente e você inicia a segunda-feira com fadiga acumulada (Burnout semanal).</p>
+            </section>
+
+            <section class="section-block">
+                <h2>A Regra de Ouro do Fim de Semana Sustentável</h2>
+                <p>1. <strong>Concentração no Sábado De Manhã:</strong> Faça seu bloco mais pesado do fim de semana das 8h às 11h de sábado. A mente estará descansada da noite de sono e a tarde/noite ficará totalmente livre.</p>
+                <p>2. <strong>Domingo Sem Culpas (Off-line):</strong> Guarde o domingo como um dia de desaceleração mental completa para restabelecer os níveis de dopamina e serotonina do cérebro.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falta de Priorização - Gestão de Rotinas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-content {
+            background: rgba(22, 27, 34, 0.7);
+            border: 1px solid rgba(48, 54, 61, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #818cf8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            transition: transform 0.2s;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        .svg-container {
+            width: 100%;
+            max-width: 450px;
+            margin: 30px auto;
+            display: block;
+        }
+        .section-block {
+            margin-bottom: 35px;
+        }
+        .section-block h2 {
+            color: #f0f6fc;
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.8);
+            padding-bottom: 8px;
+        }
+        .section-block p {
+            color: #c9d1d9;
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .matrix-cell {
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+        }
+        .m-1 { background: rgba(239, 68, 68, 0.15); border-color: rgba(239, 68, 68, 0.4); }
+        .m-2 { background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.4); }
+        .m-3 { background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.4); }
+        .m-4 { background: rgba(139, 148, 158, 0.15); border-color: rgba(139, 148, 158, 0.4); }
+    </style>
+</head>
+<body>
+
+    <div class="bg-3d">
+        <div class="grid-3d"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Voltar ao Painel Principal</a>
+        
+        <header class="main-header" style="text-align: left; margin-bottom: 20px;">
+            <span class="card-tag tag-info">Planejamento</span>
+            <h1 style="margin-top: 10px;">Aprofundamento: <span class="highlight">Falta de Priorização</span></h1>
+            <p class="subtitle" style="margin: 0;">Elimine a paralisia decisória aprendendo a filtrar o essencial e gerenciar demandas sobrepostas.</p>
+        </header>
+
+        <!-- Ilustração SVG Embutida -->
+        <svg class="svg-container" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="500" height="200" rx="12" fill="#161B22" stroke="#30363D"/>
+            <rect x="50" y="40" width="180" height="55" rx="6" fill="#21262D" stroke="#F87171"/>
+            <text x="60" y="72" fill="#F87171" font-size="13" font-weight="bold">Fazer Agora (Urgente)</text>
+            <rect x="270" y="40" width="180" height="55" rx="6" fill="#21262D" stroke="#38BDF8"/>
+            <text x="280" y="72" fill="#38BDF8" font-size="13" font-weight="bold">Agendar (Importante)</text>
+            <rect x="50" y="110" width="180" height="55" rx="6" fill="#21262D" stroke="#FBBF24"/>
+            <text x="60" y="142" fill="#FBBF24" font-size="13" font-weight="bold">Delegar / Reduzir</text>
+            <rect x="270" y="110" width="180" height="55" rx="6" fill="#21262D" stroke="#8B949E"/>
+            <text x="280" y="142" fill="#8B949E" font-size="13" font-weight="bold">Eliminar / Adiá-lo</text>
+        </svg>
+
+        <main class="page-content">
+            <section class="section-block">
+                <h2>A Armadilha do Sentimento de Urgência</h2>
+                <p>Quando tudo parece ser prioridade, nada é. O estresse constante surge quando tratamos tarefas urgentes dos outros (como e-mails profissionais banais) com a mesma importância que nossos estudos estruturais de longo prazo.</p>
+            </section>
+
+            <section class="section-block">
+                <h2>Matriz Prática de Eisenhower para Estudantes</h2>
+                <div class="matrix-grid">
+                    <div class="matrix-cell m-1">
+                        <strong style="color: #f87171;">1. Urgente & Importante</strong>
+                        <p style="font-size: 0.85rem; margin-top: 6px;">Provas da faculdade no dia seguinte, entregas imediatas do trabalho.</p>
+                    </div>
+                    <div class="matrix-cell m-2">
+                        <strong style="color: #38bdf8;">2. Não Urgente & Importante</strong>
+                        <p style="font-size: 0.85rem; margin-top: 6px;">Estudo contínuo, leituras semanais, exercícios de fixação (Onde o progresso real acontece).</p>
+                    </div>
+                    <div class="matrix-cell m-3">
+                        <strong style="color: #fbbf24;">3. Urgente & Não Importante</strong>
+                        <p style="font-size: 0.85rem; margin-top: 6px;">Notificações, e-mails secundários, reuniões sem pauta clara.</p>
+                    </div>
+                    <div class="matrix-cell m-4">
+                        <strong style="color: #8b949e;">4. Não Urgente & Não Importante</strong>
+                        <p style="font-size: 0.85rem; margin-top: 6px;">Checar feeds sociais, organizar ícones da área de trabalho no horário de estudo.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
